@@ -43,17 +43,17 @@ public class newbalance {
 	}
 	public static void sendEmail() throws InterruptedException{
 		driver.get("http://accounts.google.com");
-		driver.findElement(By.id("Email")).sendKeys("wetprelude");
+		driver.findElement(By.id("Email")).sendKeys("");
 		driver.findElement(By.id("next")).click();
 		Thread.sleep(1000);
-		driver.findElement(By.id("Passwd")).sendKeys("Cocoverde22");
+		driver.findElement(By.id("Passwd")).sendKeys("");
 		driver.findElement(By.id("signIn")).click();
 		Thread.sleep(1000);
 		driver.get("https://mail.google.com/mail/u/0/#inbox");
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//div[@class='z0']/div")).click();
 		Thread.sleep(1000);
-		driver.findElement(By.className("vO")).sendKeys("il.alexandru@yahoo.com");
+		driver.findElement(By.className("vO")).sendKeys("");
 		driver.findElement(By.className("aoT")).sendKeys("adidasi");
 	}
 }
